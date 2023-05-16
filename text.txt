@@ -1,0 +1,46 @@
+ubuntu@ip-172-31-47-198:~$ sudo docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+9e3ea8720c6d: Pull complete 
+bf36b6466679: Pull complete 
+15a97cf85bb8: Pull complete 
+9c2d6be5a61d: Pull complete 
+6b7e4a5c7c7a: Pull complete 
+8db4caa19df8: Pull complete 
+Digest: sha256:480868e8c8c797794257e2abd88d0f9a8809b2fe956cbfbc05dcc0bca1f7cd43
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+ubuntu@ip-172-31-47-198:~$ sudo docker run --name docker-ngnixsvr -d -p 8080:80 nginx:latest
+14fe0a1697a75fc6489382eb7a2e1597b43ac6512038303a138fc65b5cae6ba8
+ubuntu@ip-172-31-47-198:~$ sudo docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+14fe0a1697a7   nginx:latest   "/docker-entrypoint.…"   7 seconds ago   Up 6 seconds   0.0.0.0:8080->80/tcp, :::8080->80/tcp   docker-ngnixsvr
+ubuntu@ip-172-31-47-198:~$ mkdir new
+ubuntu@ip-172-31-47-198:~$ cd new/
+ubuntu@ip-172-31-47-198:~/new$ git clone https://github.com/Swapniltamrakar/G-12_project-e-pharma.git
+Cloning into 'G-12_project-e-pharma'...
+remote: Enumerating objects: 75, done.
+remote: Counting objects: 100% (75/75), done.
+remote: Compressing objects: 100% (70/70), done.
+remote: Total 75 (delta 32), reused 7 (delta 2), pack-reused 0
+Receiving objects: 100% (75/75), 180.84 KiB | 5.83 MiB/s, done.
+Resolving deltas: 100% (32/32), done.
+ubuntu@ip-172-31-47-198:~/new$ ls -l
+total 4
+drwxrwxr-x 3 ubuntu ubuntu 4096 May 16 13:08 G-12_project-e-pharma
+ubuntu@ip-172-31-47-198:~/new$ cd G-12_project-e-pharma/
+ubuntu@ip-172-31-47-198:~/new/G-12_project-e-pharma$ ls -l
+total 236
+-rw-rw-r-- 1 ubuntu ubuntu    75 May 16 13:08 README.md
+-rw-rw-r-- 1 ubuntu ubuntu 52284 May 16 13:08 classDiag.jpg
+-rw-rw-r-- 1 ubuntu ubuntu  1512 May 16 13:08 e-pharma.sql
+-rw-rw-r-- 1 ubuntu ubuntu    50 May 16 13:08 entity.txt
+-rw-rw-r-- 1 ubuntu ubuntu 79198 May 16 13:08 erdiag.jpg
+-rw-rw-r-- 1 ubuntu ubuntu   432 May 16 13:08 new.c
+-rw-rw-r-- 1 ubuntu ubuntu     1 May 16 13:08 newjav.java
+-rw-rw-r-- 1 ubuntu ubuntu   483 May 16 13:08 sqlProced.sql
+-rw-rw-r-- 1 ubuntu ubuntu  7422 May 16 13:08 srs.txt
+-rw-rw-r-- 1 ubuntu ubuntu 65676 May 16 13:08 usecasediag.jpg
+-rw-rw-r-- 1 ubuntu ubuntu  1595 May 16 13:08 userstory.txt
+ubuntu@ip-172-31-47-198:~/new/G-12_project-e-pharma$ ^C
+ubuntu@ip-172-31-47-198:~/new/G-12_project-e-pharma$ 
