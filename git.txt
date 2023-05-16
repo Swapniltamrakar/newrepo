@@ -15,6 +15,10 @@ sudo docker ps
 
 note - site is not secured ver(use http not https)
 
+on same file location
+docker build .
+sudo docker build -t my_first_image .
+
 aws with git
 
 
