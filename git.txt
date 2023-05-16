@@ -6,7 +6,7 @@ git remote add origin link
 git push -u origin master
 
 
-docker 
+docker on aws server
 
 sudo apt install docker.io
 sudo docker pull nginx
