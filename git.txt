@@ -15,11 +15,11 @@ sudo docker ps
 
 note - site is not secured ver(use http not https)
 
-webappp
+
 
 sudo docker built -t givename .
 
-sudo docker run -d -p 7667:7667 
+sudo docker run -d -p 7667:7667 webappp
 
 sudo docker images
 
