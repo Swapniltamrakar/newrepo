@@ -4,3 +4,10 @@ git commit -m "add"
 git status
 git remote add origin link
 git push -u origin master
+
+
+docker 
+
+sudo apt install docker.io
+sudo docker run --name ngnix -d -p 
+sudo docker ps
