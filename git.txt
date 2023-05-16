@@ -9,5 +9,5 @@ git push -u origin master
 docker 
 
 sudo apt install docker.io
-sudo docker run --name ngnix -d -p 
+sudo docker run --name docker-ngnixsvr -d -p 8080:80 nginx:latest
 sudo docker ps
