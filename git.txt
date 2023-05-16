@@ -13,7 +13,11 @@ sudo docker pull nginx
 sudo docker run --name docker-ngnixsvr -d -p 8080:80 nginx:latest
 sudo docker ps
 
+note - site is not secured ver(use http not https)
+
 aws with git
+
+
 sudo apt install git
 git clone link ----> if public direct access or need token (setting->developer()->generate token(classic)->generate(classic)) 
 git init
@@ -24,4 +28,4 @@ git remote add origin link
 git push -u origin master ----> if public direct access or need token (setting->developer()->generate token(classic)->generate(classic)) 
 
 
-note - site is not secured ver(use http not https)
+
