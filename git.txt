@@ -9,5 +9,9 @@ git push -u origin master
 docker 
 
 sudo apt install docker.io
+sudo docker pull nginx
 sudo docker run --name docker-ngnixsvr -d -p 8080:80 nginx:latest
 sudo docker ps
+
+
+note - site is not secured ver(use http not https)
