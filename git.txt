@@ -17,7 +17,7 @@ note - site is not secured ver(use http not https)
 
 
 
-sudo docker built -t givename .
+sudo docker build -t givename .
 
 sudo docker run -d -p 7667:7667 webappp
 
